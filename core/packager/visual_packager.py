@@ -147,6 +147,9 @@ class VisualPackager:
             )
 
             # Step 4: Normalize and strip internal compression
+
+            doc.subset_fonts()  # remove unused font subsets
+
             processed_bytes = doc.tobytes(
                 garbage=3,
                 clean=True,
