@@ -1,0 +1,27 @@
+{
+  "compression": {
+    "default_level": "high",
+    "max_file_size_mb": 500,
+    "max_retries": 3,
+    "retry_delay": 1.0,
+    "chunk_size_kb": 64
+  },
+  "batch": {
+    "max_workers": null,
+    "show_per_file_progress": false
+  },
+  "dictionary": {
+    "path": null,
+    "max_training_file_size_kb": 100,
+    "dict_size_kb": 100
+  },
+  "extraction": {
+    "ocr_enabled": true,
+    "encoding_detection": true
+  },
+  "storage": {
+    "input_dir": "input",
+    "output_dir": "output",
+    "restored_dir": "restored"
+  }
+}
